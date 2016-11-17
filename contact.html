@@ -2,41 +2,58 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta name="description" content="Seattle Washington's Diva Upgrades Drill Team">
+<title>Diva Upgrades - Contact Us!</title>
 <link rel="stylesheet" href="contact.css">
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script type="text/javascript" src="diva.js">
+<script type="text/javascript">
 
-</script>
+    $(document).ready(function() {
 
-<!-- <form id="contactUsForm" action="https://formspree.io/betsie@gmail.com" method="post">
-    <p>Contact us!</p>
-        <label>Name: <input type="text" name="name"></label>
-        <label>Email: <input type="text" name="_replyto"></label>
-        <label>Reason:
-            <select name="_subject">
-                <option value="enrollment" name="">I'd like to sign my child up</option>
-                <option value="media">We'd like to feature Diva Upgrades in our publication</option>
-                <option value="event">We'd like Diva Upgrades to participate in our event</option>
-                <option value="donation">I'd like to make a donation</option>
-                <option value="questions">I have questions about Diva Upgrades</option>
-                <option value="others">Something else...</option>
-            </select>
-        </label>
-        <label>Anything else? <textarea name="Posted information" cols="60" rows="10"></textarea></label>
-        <input type="submit" value="Submit">
-</form> -->
+        $('form').submit(function(event) {
+            event.preventDefault();
 
-<form method="POST" action="http://formspree.io/betsie@gmail.com">
-  <input type="name" name="name" placeholder="Your name">
-  <input type="email" name="email" placeholder="Your email">
-  <select name="_subject">
-      <option value="enrollment" name="">I'd like to sign my child up</option>
-      <option value="media">We'd like to feature Diva Upgrades in our publication</option>
-      <option value="event">We'd like Diva Upgrades to participate in our event</option>
-      <option value="donation">I'd like to make a donation</option>
-      <option value="questions">I have questions about Diva Upgrades</option>
-      <option value="others">Something else...</option>
-  </select>
-  <textarea name="message" placeholder="Your message"></textarea>
-  <button type="submit">Send</button>
-</form>
+            $.ajax({
+                url: "http://formspree.io/betsie@gmail.com",
+                method: "POST",
+                data: {
+                    name: $('#js-name').val(),
+                    email: $('#js-email').val(),
+                    option: $('#js-survey').val(),
+                    message: $('#js-message').val()
+                },
+                dataType: "json"
+            }).error(function(jqXHR, status, error){
+                alert('Uh oh, something went wrong. Please try again.');
+            }). success(function(data, status, jqXHR) {
+                alert('Thank you for your message. We will get back to you soon.');
+                $('form').find('#js-name, #js-email, #js-survey, #js-message').val('');
+            });
+        });
+
+    });
+
+    </script>
+<html>
+<body>
+<div id="contactUsForm">
+    <h1>Contact Us!
+    <form id="contactform" method="POST" action="http://formspree.io/betsie@gmail.com">
+        <input id="js-name" type="name" name="name" placeholder="Your name" size="40"><br>
+        <input id="js-email" type="email" name="email" placeholder="Your email" size="40"><br>
+        <select id="js-survey">
+            <option value="enrollment">I'd like to sign my child up</option>
+            <option value="media">We'd like to feature Diva Upgrades in our publication</option>
+            <option value="event">We'd like Diva Upgrades to participate in our event</option>
+            <option value="donation">I'd like to make a donation</option>
+            <option value="questions">I have questions about Diva Upgrades</option>
+            <option value="others">Something else...</option>
+        </select><br>
+        <input type="hidden" name="_subject" value="Diva Upgrades related e-mail" />
+        <input type="text" name="_gotcha" style="display:none" />
+        <textarea id="js-message" name="message" placeholder="Your message" rows="6" cols="60"></textarea><br>
+        <button id="submitbutton" class="button" type="submit">Submit</button>
+    </form>
+
+    <p>If you'd like to reach out to Coach Renee directly, please feel free to call her at <a href="tel:206-293-3026">206-293-3026</a>.
+</body>
+</html>
