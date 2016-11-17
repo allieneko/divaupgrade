@@ -1,0 +1,15 @@
+
+body {
+    font-family: helvetica, sans-serif;
+}
+
+#contactUsForm {
+    width: 60%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+label {
+    display: block;
+    
+}
