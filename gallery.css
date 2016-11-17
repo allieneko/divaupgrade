@@ -1,0 +1,28 @@
+
+#header img{
+height:100px;
+  width: 400px;
+  opacity: 0.8;
+
+}
+
+#subnavbar li{
+  display: inline-block;
+  padding:0px 10px 10px 0px;
+}
+#content tr{
+  padding: 20px;
+
+}
+
+#content th {
+  margin: 5px 5px 5px 5px;
+
+  border: 3px solid silver;
+}
+
+#content img{
+  margin: 5px 5px 5px 5px;
+  height:140px;
+  width: 200px;
+}
