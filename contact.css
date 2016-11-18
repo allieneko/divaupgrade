@@ -1,17 +1,36 @@
 
 body {
     font-family: helvetica, sans-serif;
+    background-image: url(divaback.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#contact-container {
+  background-color: pink;
+  width: 80%;
+  margin: auto;
+  border-radius: 15px;
+  padding: 10px;
+  box-shadow: 5px 5px 5px 5px grey;
+  position: relative;
+  margin-top: 70px;
+
 }
 
 #contactUsForm {
-    width: 60%;
-    display: block;
+    width: 40%;
     vertical-align: top;
+    display: inline-block;
     margin: auto;
 }
 
+#contactUsForm h1 {
+    font-family: 'Lobster', cursive;
+}
+
 form {
-    background-color: pink;
+    /*background-color: pink;*/
     line-height: 1.5;
     padding: 20px 0px 20px 20px;
 }
@@ -19,3 +38,16 @@ form {
 p {
     font-size: 14px;
 }
+
+#map {
+  display: inline-block;
+  margin-left: 100px;
+  margin-bottom: 50px;
+  border: 10px solid white;
+  vertical-align: bottom;
+}
+
+/*
+div {
+  border: 2px dotted black;
+}*/

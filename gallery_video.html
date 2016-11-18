@@ -1,48 +1,64 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>The Diva Upgrade Drill Team Galllery</title>
-    <link rel="stylesheet" href="gallery.css" >
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+  <meta name="description" content="Seattle Washington's Diva Upgrade Drill Team">
+  <meta name="author" content="">
+  <link rel="icon" href="../../favicon.ico">
 
 
-<div id="container">
+  <title>Diva Upgrade Drill Team</title>
 
+  <!-- Bootstrap core CSS -->
+  <link href="dist/css/bootstrap.min.css" rel="stylesheet">
 
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- Custom styles for this template -->
+  <link href="gallery.css" rel="stylesheet">
+  <link href="divahomepage.css" rel="stylesheet">
+</head>
+<!-- NAVBAR
+================================================== -->
+<html>
+<body>
+  <div id="site-container">
   <div class="navbar-wrapper">
-    <div class="container">
-      <nav class="navbar navbar-inverse navbar-static-top">
-        <div class="container">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">Diva Upgrades Drill </a>
-          </div>
-          <div id="navbar" class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="#about">About Us</a></li>
-              <li><a href="#contact">Gallery</a></li>
-              <li><a href="#contact">Contact</a></li>
-                        </ul>
-          </div>
-        </div>
-      </nav>
+      <div class="container">
+          <nav class="navbar navbar-inverse navbar-static-top">
+              <div class="container">
+                  <div class="navbar-header">
+                      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                          <span class="sr-only">Toggle navigation</span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                      </button>
+                      <a class="navbar-brand" href="/divaupgrade/index.html"><h1>Diva Upgrades Drill</h1></a>
+                  </div> <!--navbar-header-->
+                  <div id="navbar" class="navbar-collapse collapse">
+                      <ul class="nav navbar-nav">
+                          <li class="active"><a href="/divaupgrade/index.html">Home</a></li>
+                          <li><a href="/divaupgrade/aboutus.html">About Us</a></li>
+                          <li><a href="/divaupgrade/gallery.html">Gallery</a></li>
+                          <li><a href="/divaupgrade/contact.html">Contact</a></li>
+                      </ul>
+                  </div> <!--navbar-->
+              </div> <!-- container-->
+          </nav> <!-- navbar navbar-inverse navbar-static-top -->
+      </div> <!-- container-->
+  </div> <!--navbar-wrapper-->
+</div> <!-- site container-->
 
-    </div>
-  </div>
 
 
-<div id="header">
-  <img src="banner.jpg" alt="" />
-
-</div>
 <div id="subnavbar">
   <ul>
     <li><a href="file:///Users/Amy/Desktop/divaupgrade/divaupgrade/gallery.html">Photos</a></li>
@@ -78,6 +94,24 @@
 
 
 </div>
-</div>
-</body>
+  
+ <script type="text/javascript">
+  $('.text').hide().removeClass('text').addClass('text-js');
+
+  $('.thumb').hover(function(){
+  $(this).find('.text-js').fadeToggle();
+  });
+
+  </script>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
 </html>

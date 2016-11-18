@@ -1,43 +1,67 @@
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<meta name="description" content="Seattle Washington's Diva Upgrades Drill Team">
-<title>Diva Upgrades - Contact Us!</title>
-<link rel="stylesheet" href="contact.css">
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script type="text/javascript">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <meta name="description" content="Seattle Washington's Diva Upgrade Drill Team">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
 
-    $(document).ready(function() {
+    <title>Diva Upgrade Drill Team</title>
 
-        $('form').submit(function(event) {
-            event.preventDefault();
+    <!-- Bootstrap core CSS -->
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
 
-            $.ajax({
-                url: "http://formspree.io/betsie@gmail.com",
-                method: "POST",
-                data: {
-                    name: $('#js-name').val(),
-                    email: $('#js-email').val(),
-                    option: $('#js-survey').val(),
-                    message: $('#js-message').val()
-                },
-                dataType: "json"
-            }).error(function(jqXHR, status, error){
-                alert('Uh oh, something went wrong. Please try again.');
-            }). success(function(data, status, jqXHR) {
-                alert('Thank you for your message. We will get back to you soon.');
-                $('form').find('#js-name, #js-email, #js-survey, #js-message').val('');
-            });
-        });
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
-    });
-
-    </script>
-<html>
+    <!-- Custom styles for this template -->
+    <link href="divahomepage.css" rel="stylesheet">
+    <link href="contact.css" rel="stylesheet"
+  </head>
+<!-- NAVBAR
+================================================== -->
 <body>
+    <div id="site-container">
+    <div class="navbar-wrapper">
+        <div class="container">
+            <nav class="navbar navbar-inverse navbar-static-top">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="/divaupgrade/index.html"><h1>diva upgrades drill</h1></a>
+                    </div> <!--navbar-header-->
+                    <div id="navbar" class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="/divaupgrade/index.html">Home</a></li>
+                            <li><a href="/divaupgrade/aboutus.html">About Us</a></li>
+                            <li><a href="/divaupgrade/gallery.html">Photos</a></li>
+                            <li><a href="/divaupgrade/gallery_video.html">Videos</a></li>
+                            <li><a href="https://www.gofundme.com/diva-upgrades-drill-team">Donate</a></li>
+                            <li><a href="/divaupgrade/contact.html">Contact</a></li>
+                        </ul>
+                    </div> <!--navbar-->
+                </div> <!-- container-->
+            </nav> <!-- navbar navbar-inverse navbar-static-top -->
+        </div> <!-- container-->
+    </div> <!--navbar-wrapper-->
+</div> <!-- site container-->
+<div id="contact-container">
 <div id="contactUsForm">
-    <h1>Contact Us!
+    <h1>Contact Us!</h1>
     <form id="contactform" method="POST" action="http://formspree.io/betsie@gmail.com">
+      Currently, we practice at Bitterlake Community Center from 5pm-6pm. In preparation for performance season, in May we will extend our practices to 4pm-6pm. As of November 2016, sign up fees for new members are $35.00, and there is an additional $250.00 charge for the uniform and sweatsuit. Please contact us to confirm current pricing!
+      <p>If you'd like to reach out to Coach Renee directly, please feel free to call her at <a href="tel:206-476-3066">206-476-3066</a>.</p>
         <input id="js-name" type="name" name="name" placeholder="Your name" size="40"><br>
         <input id="js-email" type="email" name="email" placeholder="Your email" size="40"><br>
         <select id="js-survey">
@@ -52,8 +76,23 @@
         <input type="text" name="_gotcha" style="display:none" />
         <textarea id="js-message" name="message" placeholder="Your message" rows="6" cols="60"></textarea><br>
         <button id="submitbutton" class="button" type="submit">Submit</button>
+      </div>
     </form>
+      <div id="map">
+      <script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCY9JQRxYpkHmIB5_GUVH7PrS0j2Ii-j5E'></script><div style='overflow:hidden;height:400px;width:520px;'><div id='gmap_canvas' style='height:400px;width:520px;'></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div> <a href='https://addmap.net/'>google maps widget html</a> <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=757fafa2e4f2e5739be02b7802c0c02b8706a3f3'></script><script type='text/javascript'>function init_map(){var myOptions = {zoom:12,center:new google.maps.LatLng(47.7240808,-122.34856589999998),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(47.7240808,-122.34856589999998)});infowindow = new google.maps.InfoWindow({content:'<strong>Bitter Lake Community Center</strong><br>13035 Linden Ave N<br>98133 Seattle<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+    </div>
 
-    <p>If you'd like to reach out to Coach Renee directly, please feel free to call her at <a href="tel:206-293-3026">206-293-3026</a>.
+  </div>
+
+</html>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.min.js"><\/script>')</script>
+<script src="dist/js/bootstrap.min.js"></script>
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="assets/js/ie10-viewport-bug-workaround.js"></script>
 </body>
 </html>
