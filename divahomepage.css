@@ -19,14 +19,14 @@ p {
     margin-top: 50px;
 }
 
-@font-face {
-    font-family: Debby;
-    src:
-	url('divaupgrade/fonts/debby.otf')
-	format('opentype');
-    src:
-	url('divaupgrade/fonts/debby.ttf')
-	format('truetype');
+a {
+    color: dimgrey;
+    text-decoration: none;
+}
+
+a:hover {
+    color: dimgrey;
+    text-decoration: none;
 }
 
 
