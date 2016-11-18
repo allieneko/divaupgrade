@@ -42,21 +42,25 @@ img {
 .thumb:hover .text {
     display: block
 }
-#subnavbar li{
+
+#content {
+  display: inline-block;;
+}
+
+#video_link a{
   display: inline-block;
-  font-size: 20px;
-  padding: 10px;
-}
-#subnavbar a{
-  padding: 7px;
-  border-radius: 20px;
-  background-color: white;
   text-decoration: none;
-  color: #FFB7C2;
-  box-shadow: 3px 3px 5px grey;
-
+  padding: 10px;
+  color:#FFC0CB;
+  background-color:#222222;
+  text-align: center;
+  border-radius:10px;
+  margin: 10px;
 }
 
-#content p{
-  font-size: 10px;
+#video_link p{
+margin: 5px;
+}
+#video_link a: visited{
+  color:#FFC0CB;
 }
