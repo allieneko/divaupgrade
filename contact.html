@@ -59,12 +59,12 @@
 <div id="contact-container">
 <div id="contactUsForm">
     <h1>Contact Us!</h1>
-    <form id="contactform" method="POST" action="http://formspree.io/betsie@gmail.com">
+    <form id="contactform" action="https://www.enformed.io/5jvna6bc" method="POST">
       Currently, we practice at Bitterlake Community Center from 5pm-6pm. In preparation for performance season, in May we will extend our practices to 4pm-6pm. As of November 2016, sign up fees for new members are $35.00, and there is an additional $250.00 charge for the uniform and sweatsuit. Please contact us to confirm current pricing!
       <p>If you'd like to reach out to Coach Renee directly, please feel free to call her at <a href="tel:206-476-3066">206-476-3066</a>.</p>
         <input id="js-name" type="name" name="name" placeholder="Your name" size="40"><br>
         <input id="js-email" type="email" name="email" placeholder="Your email" size="40"><br>
-        <select id="js-survey">
+        <select id="js-survey" name="contact reason">
             <option value="enrollment">I'd like to sign my child up</option>
             <option value="media">We'd like to feature Diva Upgrades in our publication</option>
             <option value="event">We'd like Diva Upgrades to participate in our event</option>
@@ -72,8 +72,9 @@
             <option value="questions">I have questions about Diva Upgrades</option>
             <option value="others">Something else...</option>
         </select><br>
-        <input type="hidden" name="_subject" value="Diva Upgrades related e-mail" />
-        <input type="text" name="_gotcha" style="display:none" />
+        <input type="hidden" name="*subject" value="Diva Upgrades related e-mail" />
+        <input type="text" name="*honeypot" style="display:none" />
+        <input type="hidden" name="*redirect" value="/divaupgrade/submission.html" />
         <textarea id="js-message" name="message" placeholder="Your message" rows="6" cols="60"></textarea><br>
         <button id="submitbutton" class="button" type="submit">Submit</button>
       </div>
