@@ -16,7 +16,7 @@ p {
 #site-container {
     width: 100%;
     margin: auto;
-    margin-top: 90px;
+    margin-top: 50px;
 }
 
 
@@ -76,6 +76,10 @@ p {
   border-radius: 7px;
   width: 600px;
 
+}
+
+.container {
+    width: 100%;
 }
 
 .events {
@@ -139,11 +143,14 @@ p {
     color: #D964C8;
     margin: auto;
     position: relative;
+    padding-left: 40px;
+    padding-right: 40px;
 
 }
 
 .navbar-brand {
     height: 50px;
+    width: 330px;
 }
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
@@ -181,7 +188,7 @@ p {
 @media (min-width: 768px) {
   /* Navbar positioning foo */
   .navbar-wrapper {
-    margin-top: 20px;
+    margin-top: 0px;
   }
   .navbar-wrapper .container {
     padding-right: 15px;
