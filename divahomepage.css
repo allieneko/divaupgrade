@@ -91,6 +91,10 @@ p {
     float: left;
 }
 
+h4 {
+    text-align: center;
+}
+
 #aboutus {
     width: 60%;
     margin: auto;

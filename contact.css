@@ -22,6 +22,10 @@ body {
     margin: auto;
 }
 
+#contactUsForm h1 {
+    font-family: 'Lobster', cursive;
+}
+
 form {
     /*background-color: pink;*/
     line-height: 1.5;
