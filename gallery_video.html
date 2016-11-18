@@ -8,6 +8,10 @@
   <meta name="description" content="Seattle Washington's Diva Upgrade Drill Team">
   <meta name="author" content="">
   <link rel="icon" href="../../favicon.ico">
+  <link href="lity/dist/lity.css" rel="stylesheet">
+  <script src="lity/vendor/jquery.js"></script>
+  <script src="lity/dist/lity.js"></script>
+
 
 
   <title>Diva Upgrade Drill Team</title>
@@ -57,33 +61,22 @@
   </div> <!--navbar-wrapper-->
 </div> <!-- site container-->
 
-
-
-
 <div id="content">
   <div class="thumb">
-<iframe style ="border: 6px solid white;" width="420" height="237.75" src="https://www.youtube.com/embed/oaIfwhS3DOc" frameborder="0" allowfullscreen></iframe>
+  <a href="https://www.youtube.com/embed/oaIfwhS3DOc" data-lity><img src="https://img.youtube.com/vi/oaIfwhS3DOc/0.jpg" alt="YouTube"></a>
   </div>
-
   <div class="thumb">
-<iframe style ="border: 6px solid white;" width="420" height="237.75" src="https://www.youtube.com/embed/av7FRqWDLwo" frameborder="0" allowfullscreen></iframe>
+  <a href="https://www.youtube.com/embed/av7FRqWDLwo" data-lity><img src="https://img.youtube.com/vi/av7FRqWDLwo/0.jpg" alt="YouTube"></a>
   </div>
-
   <div class="thumb">
-<iframe style ="border: 6px solid white;" width="420" height="237.75" src="https://www.youtube.com/embed/oGapN4F1ms0" frameborder="0" allowfullscreen></iframe>
+  <a href="https://www.youtube.com/embed/oGapN4F1ms0" data-lity><img src="https://img.youtube.com/vi/oGapN4F1ms0/0.jpg" alt="YouTube"></a>
   </div>
-
   <div class="thumb">
-  <iframe style ="border: 6px solid white;" width="420" height="237.75" src="https://www.youtube.com/embed/58kNK4laQPM" frameborder="0" allowfullscreen></iframe>
-  </div>
-
+  <a href="https://www.youtube.com/embed/58kNK4laQPM" data-lity><img src="https://img.youtube.com/vi/58kNK4laQPM/0.jpg" alt="YouTube"></a>
   <div class="thumb">
-    <iframe style ="border: 6px solid white;" width="420" height="237.75" src="https://www.youtube.com/embed/88kiCeNobu0" frameborder="0" allowfullscreen> </iframe>
-  </div>
-
+  <a href="https://www.youtube.com/embed/88kiCeNobu0" data-lity><img src="https://img.youtube.com/vi/88kiCeNobu0/0.jpg" alt="YouTube"></a>
   <div class="thumb">
-    <iframe style ="border: 6px solid white;" width="420" height="237.75" src="https://www.youtube.com/embed/mcVo-i0LLPs" frameborder="0" allowfullscreen></iframe>
-  </div>
+  <a href="https://www.youtube.com/embed/mcVo-i0LLPs" data-lity><img src="https://img.youtube.com/vi/mcVo-i0LLPs/0.jpg" alt="YouTube"></a>
 
 </div>
 <div id="video_link">
@@ -96,11 +89,14 @@
 
 
  <script type="text/javascript">
-  $('.text').hide().removeClass('text').addClass('text-js');
+ $('.text').hide().removeClass('text').addClass('text-js');
 
-  $('.thumb').hover(function(){
-  $(this).find('.text-js').fadeToggle();
-  });
+ $('.thumb').hover(function(){
+ $(this).find('.text-js').fadeToggle();
+ });
+
+$(document).on('click', '[data-lightbox]', lity);
+
 
   </script>
 
