@@ -17,6 +17,11 @@ body {
   width: 100%;
 }
 
+#video_link {
+    text-align: center;
+    display: block;
+}
+
 img {
   height: 250px;
   width: 430px;
@@ -29,6 +34,22 @@ img {
     margin: 10px;
     float: left
 }
+
+#content {
+    width: 90%;
+    margin: auto;
+}
+.videothumb {
+    display: inline-block;
+    margin: auto;
+}
+.videothumb img {
+    height: 300px;
+    width: 400px;
+    display: inline-block;
+    vertical-align: top;
+}
+
 .text {
     display: none;
     position: absolute;
@@ -37,7 +58,7 @@ img {
     width: 100%;
     background: #999;
     background: rgba(0,0,0,0.3);
-    text-align: center
+    text-align: center;
 }
 
 .thumb:hover .text {
