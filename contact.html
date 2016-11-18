@@ -3,6 +3,7 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta name="description" content="Seattle Washington's Diva Upgrades Drill Team">
 <title>Diva Upgrades - Contact Us!</title>
+<link href="divahomepage.css" rel="stylesheet">
 <link rel="stylesheet" href="contact.css">
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script type="text/javascript">
@@ -35,9 +36,12 @@
     </script>
 <html>
 <body>
+  <div id="contact-container">
 <div id="contactUsForm">
-    <h1>Contact Us!
+    <h1>Contact Us!</h1>
     <form id="contactform" method="POST" action="http://formspree.io/betsie@gmail.com">
+      Currently, we practice at Bitterlake Community Center from 5pm-6pm. In preparation for performance season, in May we will extend our practices to 4pm-6pm. As of November 2016, sign up fees for new members are $35.00, and there is an additional $250.00 charge for the uniform and sweatsuit. Please contact us to confirm current pricing!
+      <p>If you'd like to reach out to Coach Renee directly, please feel free to call her at <a href="tel:206-293-3026">206-293-3026</a>.</p>
         <input id="js-name" type="name" name="name" placeholder="Your name" size="40"><br>
         <input id="js-email" type="email" name="email" placeholder="Your email" size="40"><br>
         <select id="js-survey">
@@ -52,8 +56,13 @@
         <input type="text" name="_gotcha" style="display:none" />
         <textarea id="js-message" name="message" placeholder="Your message" rows="6" cols="60"></textarea><br>
         <button id="submitbutton" class="button" type="submit">Submit</button>
+      </div>
     </form>
+      <div id="map">
+      <script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCY9JQRxYpkHmIB5_GUVH7PrS0j2Ii-j5E'></script><div style='overflow:hidden;height:400px;width:520px;'><div id='gmap_canvas' style='height:400px;width:520px;'></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div> <a href='https://addmap.net/'>google maps widget html</a> <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=757fafa2e4f2e5739be02b7802c0c02b8706a3f3'></script><script type='text/javascript'>function init_map(){var myOptions = {zoom:12,center:new google.maps.LatLng(47.7240808,-122.34856589999998),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(47.7240808,-122.34856589999998)});infowindow = new google.maps.InfoWindow({content:'<strong>Bitter Lake Community Center</strong><br>13035 Linden Ave N<br>98133 Seattle<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+    </div>
 
-    <p>If you'd like to reach out to Coach Renee directly, please feel free to call her at <a href="tel:206-293-3026">206-293-3026</a>.
+  </div>
+
 </body>
 </html>
