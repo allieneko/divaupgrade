@@ -6,6 +6,7 @@ body {
   background-image: url(divaback.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  padding: 15px;
 }
 
 /*div {
@@ -40,4 +41,22 @@ img {
 }
 .thumb:hover .text {
     display: block
+}
+#subnavbar li{
+  display: inline-block;
+  font-size: 20px;
+  padding: 10px;
+}
+#subnavbar a{
+  padding: 7px;
+  border-radius: 20px;
+  background-color: white;
+  text-decoration: none;
+  color: #FFB7C2;
+  box-shadow: 3px 3px 5px grey;
+
+}
+
+#content p{
+  font-size: 10px;
 }
