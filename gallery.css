@@ -4,7 +4,9 @@
 }
 
 body {
-  background-color: #F1F6F9;
+  background-image: url(divaback.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /*div {
